@@ -1,0 +1,19 @@
+
+<div>
+
+    <p>Balance: {{this.existingBalance }}</p>
+    <form [formGroup]="payForm" (ngSubmit)="pay()" #formDir="ngForm" novalidate>
+        <div class="form-group row">
+            <label class=" control-label col-md-12">Pay to {{this.client.clientOwesTo}}</label>
+            <div class="col-md-4">
+                <input class="form-control" name="nameInput" type="text" formControlName="amount" [(ngModel)]="amount" required>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-default" [disabled]="!amount">Pay</button>
+        </div>
+    </form>
+
+</div>

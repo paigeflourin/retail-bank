@@ -1,0 +1,15 @@
+<h1> Retail bank</h1>
+
+<h2>Hello, {{this.client.clientName}}</h2>
+
+<p *ngIf="this.payAmount"> Transferred {{this.payAmount}} to {{this.client.clientOwesTo}} </p>
+
+<p *ngIf="this.client.clientOwesFromAmount > 0"> Owing {{this.client.clientOwesFromAmount}} from {{this.client.clientOwesFrom}} </p>
+
+
+<p> Your balance is {{this.client.clientBalance }}</p>
+
+<p *ngIf="this.client.clientOwes"> Owing {{this.client.clientOwes}} to {{this.client.clientOwesTo}} </p>
+
+<button name="topup" (click)="onTopup()"> Topup </button>
+<button name="pay" (click)="onPay()"> Pay </button>
