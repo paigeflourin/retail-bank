@@ -1,7 +1,7 @@
-##h1 Retail Bank App
+#H1 Retail Bank App
 
 
-##h2 Assumption
+##H2 Assumption
 
 1. Client only owes to one client
 
